@@ -15,7 +15,7 @@ justify-content:space-around;
 margin: 10rem auto;
 }
 .card {
-height: 40vh;
+height: 50vh;
 width: 20vw;
 background-color: rgb(0, 153, 255);
 border-radius: 20px;
@@ -42,7 +42,7 @@ margin: 0.5rem 0;
 font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 #banana:hover {
-transform: rotate(1);
+transform: rotate(4deg);
 }
 #orange {
 font-size: 2.2rem;
@@ -50,7 +50,7 @@ margin: 0.5rem 0;
 font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 #orange:hover {
-transform: scale(1.1);
+transform: scale(.9);
 }
 #dragon {
 font-size: 2.2rem;
@@ -58,7 +58,7 @@ margin: 0.5rem 0;
 font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 #dragon:hover {
-transform: scale(1.1);
+transform: translateY(-15px);
 }
 #elder {
 font-size: 2.2rem;
@@ -66,7 +66,7 @@ margin: 0.5rem 0;
 font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 #elder:hover {
-transform: scale(1.1);
+transform: translateY(15px);
 }
 #fig {
 font-size: 2.2rem;
@@ -74,7 +74,7 @@ margin: 0.5rem 0;
 font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 #fig:hover {
-transform: scale(1.1);
+transform: skew(-10deg);
 }
 #grape {
 font-size: 2.2rem;
@@ -82,7 +82,7 @@ margin: 0.5rem 0;
 font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 #grape:hover {
-transform: scale(1.1);
+transform: skew(10deg);
 }
 #honey {
 font-size: 2.2rem;
@@ -90,7 +90,7 @@ margin: 0.5rem 0;
 font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 #honey:hover {
-transform: scale(1.1);
+transform: translateX(10px);
 }
 #straw {
 font-size: 2.2rem;
@@ -98,8 +98,83 @@ margin: 0.5rem 0;
 font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 #straw:hover {
-transform: scale(1.1);
+transform: translateX(-10px);
 }
+#guava {
+font-size: 2.2rem;
+margin: 0.5rem 0;
+font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+#guava:hover {
+animation-name: pulse;
+animation-duration: 4s;
+}
+#blue {
+font-size: 2.2rem;
+margin: 0.5rem 0;
+font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+#blue:hover {
+animation-name: push;
+animation-duration: 1s;
+}
+#mango {
+font-size: 2.2rem;
+margin: 0.5rem 0;
+font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+#mango:hover {
+animation-name: buzz;
+animation-duration: 1s;
+}
+@keyframes pulse {
+25% {
+  transform: scale(1.1);
+    }
+75% {
+  transform: scale(0.9);
+    }
+  }
+@keyframes push {
+50% {
+   transform: scale(0.8);
+  }
+100% {
+   transform: scale(1);
+  }
+}
+@keyframes buzz {
+    10% {
+      transform: translateX(3px) rotate(2deg);
+    }
+    20% {
+      transform: translateX(-3px) rotate(-2deg);
+    }
+    30% {
+      transform: translateX(3px) rotate(2deg);
+    }
+    40% {
+      transform: translateX(-3px) rotate(-2deg);
+    }
+    50% {
+      transform: translateX(2px) rotate(1deg);
+    }
+    60% {
+      transform: translateX(-2px) rotate(-1deg);
+    }
+    70% {
+      transform: translateX(2px) rotate(1deg);
+    }
+    80% {
+      transform: translateX(-2px) rotate(-1deg);
+    }
+    90% {
+      transform: translateX(1px) rotate(0);
+    }
+    100% {
+      transform: translateX(-1px) rotate(0);
+    }
+  }
 @media screen and (min-width: 768px){
    
 }
