@@ -175,6 +175,7 @@ animation-duration: 1s;
       transform: translateX(-1px) rotate(0);
     }
   }
+<<<<<<< HEAD
 @media screen and (min-width: 768px){
   body {
     width: 40%;
@@ -186,3 +187,17 @@ animation-duration: 1s;
     width: 27%;
    }
 }
+=======
+    @media screen and (max-width: 1000px) {
+        .card{
+            width: 40%;
+        }
+        
+    }
+    @media screen and (max-width: 813px) {
+        .card {
+            width: 90%;
+        }
+        
+    }
+>>>>>>> 6e93ba26f286691d6964f1ffa2d3704e217a9530
